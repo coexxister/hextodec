@@ -7,10 +7,9 @@ int main()
     string hexString = "FF";
     int decimal=0;
     int len = hexString.size();
-    char arr[len];
+    char arr[len] = hexString.toCharArray();
     int pow = len--;
     int s=1;
-    strcpy(arr,hexString.c_str());
     for(int i=0; i<len; i++)
     {
         while(pow--)

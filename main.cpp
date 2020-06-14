@@ -3,17 +3,14 @@
 using namespace std;
 int main()
 {
-    string hexString = "FF";
-    int len = hexString.length();
-
     //variable in brackets must be constant
-    char arr[len];
+    char arr[] = "FF";
 
-    for (int i = 0; i < arr.length(); i++) {
+    for (int i = 0; i < arr[].length(); i++) {
         arr[0] = hexString[0];
     }
 
-    int pow = arr.length() - 1;
+    int pow = arr[].length() - 1;
     int s = 1;
     int decimal = 0;
 
